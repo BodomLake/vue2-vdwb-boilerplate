@@ -1,0 +1,353 @@
+// cover some element-ui styles
+$baseFontColor: #97a8be;
+$baseBackgroundColor: #001f42;
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+
+.el-range-input {
+  color: #97a8be;
+}
+
+.el-date-editor .el-range-input {
+  color: #97a8be !important;
+}
+.pagination-container .el-pagination {
+  /* right: 0; */
+  position: relative !important;
+}
+.el-pagination {
+  color: #ccc;
+  .btn-prev {
+    position: relative;
+  }
+  .btn-prev,
+  .btn-next {
+    color: #ccc;
+    background: none;
+  }
+  button:disabled {
+    background: none;
+    cursor: not-allowed;
+  }
+  .el-pager li {
+    color: #ccc;
+    background: none;
+    min-width: 30px;
+  }
+  .el-pager li.active {
+    color: #ccc;
+    background: #1890ff;
+    border-radius: 5px;
+    cursor: default;
+  }
+}
+
+// 表格
+.el-table .el-table__header-wrapper th {
+  color: $baseFontColor !important;
+  font-weight: 400;
+}
+
+.el-input--small .el-input__inner {
+  border: 1px solid #3b5999c9;
+  background: #05318736;
+  font-size: 0.75rem;
+}
+
+.el-form-item {
+  margin-right: 2rem !important;
+}
+
+.el-table th {
+  background: #002f5c;
+}
+
+.el-table th > .cell {
+  color: #eee;
+}
+
+// 日期选择器
+.el-range-editor--medium .el-range-input {
+  font-size: 0.75rem;
+  background: transparent;
+  color: $baseFontColor;
+}
+.el-time-spinner__item {
+  background: #fff;
+}
+.el-time-spinner__list {
+  background: #fff;
+}
+
+.el-range-editor.el-input__inner {
+  background: #05318736;
+}
+
+.el-input__inner {
+  color: $baseFontColor;
+}
+
+// 下拉框
+$SelectColor: #3b5999c9;
+.el-select-dropdown__item {
+  color: $baseFontColor;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #008582;
+}
+
+.el-select-dropdown__item.selected {
+  color: #eee;
+}
+
+.el-select-dropdown {
+  border: 1px solid $SelectColor;
+  background-color: $SelectColor;
+  border-radius: 1px;
+  box-shadow: 0px 0px 7px 1px $SelectColor;
+  //box-shadow: none;
+}
+.el-scrollbar__wrap {
+  border-radius: 0;
+}
+
+.el-popper[x-placement^="bottom"] .popper__arrow:after {
+  border-bottom-color: #fff;
+}
+
+.el-popper[x-placement^="bottom"] .popper__arrow {
+  border-bottom-color: $SelectColor;
+}
+
+// 卡片
+.el-card.is-always-shadow {
+  background: #001d38;
+}
+.el-card {
+  color: #fff;
+}
+
+// tree
+.el-tree {
+  color: #eee;
+  background: #001d38;
+}
+
+.el-tree-node__content:hover {
+  color: #001d38;
+}
+
+// 箭头
+// .el-icon-arrow-right:before {
+//   color: #eee;
+// }
+
+// 抽屉
+.custom-drawer {
+  background: $baseBackgroundColor;
+  padding: 3rem 1rem 0;
+}
+
+// 图片
+.el-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 1px solid #186886;
+  color: #fff;
+}
+
+// tab
+.el-tabs--border-card {
+  border: 1px solid #186886;
+}
+.el-tabs__nav-scroll {
+  color: #000;
+  background: #002f5c;
+}
+
+.el-tabs--border-card > .el-tabs__header .el-tabs__item.is-active {
+  color: #fff;
+  background-color: #4169e1;
+  border-right-color: #002f5c;
+  border-left-color: #002f5c;
+}
+
+.el-tabs__content {
+  background: $baseBackgroundColor;
+}
+
+// suggestion
+
+.el-autocomplete-suggestion {
+  border: 1px solid $SelectColor;
+  background-color: $SelectColor;
+  border-radius: 1px;
+  box-shadow: 0px 0px 7px 1px $SelectColor;
+}
+.el-autocomplete-suggestion__list {
+  li {
+    color: #eee;
+    &:hover {
+      background: #008582;
+    }
+  }
+}
+
+// radio
+.el-radio__label {
+  color: #eee;
+}
+
+.gen-card {
+  .is-top {
+    color: #add8e6;
+  }
+  .is-active {
+    color: #1e90ff;
+  }
+}
+
+.gen-card .el-tabs__nav {
+  margin-left: 2rem;
+}
+
+.el-textarea textarea {
+  background: #fff0;
+  color: #97a8be;
+  border: 1px solid #01399b;
+}
+
+.gen-dialog {
+  .el-tabs__nav {
+    margin-left: 2rem;
+  }
+  .el-tabs__item {
+    color: #fff;
+  }
+  .el-tabs__content {
+    color: #fff;
+  }
+}
+
+.el-table__row > td > .cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .el-image {
+    min-width: 50px;
+    width: 30%;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.chart-drawer .el-drawer__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  background: #0d2f61;
+}
+
+.event-drawer .el-drawer__body {
+  /*background-color: #374954;*/
+  background: #001f42;
+}
+
+.event-drawer .el-notification__content {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.basic-container .searching-picture .el-image {
+  max-height: 330px;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td.el-table__cell {
+  background-color: #475569;
+}
